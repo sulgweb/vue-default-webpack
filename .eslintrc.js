@@ -25,7 +25,7 @@ module.exports = {
     'quotes': [2, 'single'], // js必须使用单引号
     "linebreak-style": [0 ,"error", "windows"], //允许windows开发环境
     // 'semi': [2, 'always'], // 语句强制分号结尾
-    'no-console': [1], // 不允许console语句
+    'no-console': off, // 允许console语句
     'no-unused-vars': [1], // 声明了变量但是没有使用检测
     'space-unary-ops': [1, { 'words': true, 'nonwords': false }], // 一元运算符的前/后要不要加空格
     'brace-style': [2, '1tbs', { 'allowSingleLine': false }], // 大括号风格

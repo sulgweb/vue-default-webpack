@@ -3,16 +3,16 @@
  * @author: XianPengFei
  * @lastEditors: XianPengFei
  * @Date: 2020-09-09 11:20:31
- * @LastEditTime: 2020-09-10 17:19:56
+ * @LastEditTime: 2020-09-17 11:19:19
  * @Copyright: 1.0.0
 -->
 <template>
     <div class="page-login">
         <div>login test</div>
         <div class="list">
-            <a-button type="primary" @click="toIndex">to Index</a-button>
-            <a-button type="default" v-if="!currentUser.id" v-debounce="[login,`click`,300]">login</a-button>
-            <a-button type="default" v-else v-debounce="[logout,`click`,300]">logout</a-button>
+            <van-button type="primary" @click="toIndex">to Index</van-button>
+            <van-button type="default" v-if="!currentUser.id" v-debounce="[login,`click`,300]">login</van-button>
+            <van-button type="default" v-else v-debounce="[logout,`click`,300]">logout</van-button>
         </div>
         <a-input placeholder="Basic usage"/>
         <div>用户id:{{currentUser.id}}</div>

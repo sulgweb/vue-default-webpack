@@ -3,13 +3,13 @@
  * @author: XianPengFei
  * @lastEditors: XianPengFei
  * @Date: 2020-09-09 11:20:31
- * @LastEditTime: 2020-09-11 11:09:23
+ * @LastEditTime: 2020-09-17 11:12:01
  * @Copyright: 1.0.0
 -->
 <template>
     <div>
         <div>index test</div>
-        <a-button type="primary" @click="toLogin">to Login</a-button>
+        <van-button type="primary" @click="toLogin">to Login</van-button>
         <div ref="myEchart" style="width: 600px;height:400px;"></div>
     </div>
 </template>

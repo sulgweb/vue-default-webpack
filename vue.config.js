@@ -3,7 +3,7 @@
  * @author: XianPengFei
  * @lastEditors: XianPengFei
  * @Date: 2020-09-09 11:26:55
- * @LastEditTime: 2020-09-14 16:37:27
+ * @LastEditTime: 2020-09-17 11:15:07
  * @Copyright: 1.0.0
  */
 
@@ -26,7 +26,10 @@ function addStyleResource(rule) {
 let cdnObj = {
   css: [
     // bootcdn公共资源
-    'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/2.0.0-beta.3/antd.min.css',
+    // 'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/2.0.0-beta.3/antd.min.css',
+
+    // jsDelivr公共资源
+    'https://cdn.jsdelivr.net/npm/vant@next/lib/index.css',
   ],
   js: [
     // bootcdn公共资源
@@ -35,7 +38,10 @@ let cdnObj = {
     'https://cdn.bootcdn.net/ajax/libs/vue-router/4.0.0-beta.7/vue-router.global.js',
     'https://cdn.bootcdn.net/ajax/libs/vuex/4.0.0-beta.4/vuex.global.min.js',
     'https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0-rc.1/echarts-en.common.min.js',
-    'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/2.0.0-beta.3/antd.min.js',
+    // 'https://cdn.bootcdn.net/ajax/libs/ant-design-vue/2.0.0-beta.3/antd.min.js',
+
+    // jsDelivr公共资源
+    'https://cdn.jsdelivr.net/npm/vant@next/lib/vant.min.js',
   ]
 }
 /* let cdnJsList = "",
@@ -69,8 +75,7 @@ module.exports = {
       less: {
         lessOptions: {
           modifyVars: {
-            'primary-color': '#18a9d5',
-            'link-color': '#18a9d5',
+            hack: `true; @import "src/style/base.less";`,
           },
           javascriptEnabled: true,
         },
